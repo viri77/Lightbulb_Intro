@@ -1,13 +1,5 @@
-from datetime import datetime
-from typing import List
+The function input is an array of datetime objects - this is the date and time of pressing the button. Your task is to determine how long the light bulb has been turned on.
 
+Input: A list of datetime objects
 
-def sum_light(els: List[datetime]) -> int:
-    vremja = 0
-    k = els
-    # от 6-5, от 4-3, от 2-1
-    for i in range(1, len(k), 2):
-        vremja += ((k[i] - k[i - 1]).seconds)
-        vremja += ((k[i] - k[i - 1]).days) * 86400
-    return vremja
-
+Output: A number of seconds as an integer.
